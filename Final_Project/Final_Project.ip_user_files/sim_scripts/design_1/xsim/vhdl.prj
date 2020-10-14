@@ -1,0 +1,24 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/efc8/hdl/AXI_VGA_Slave_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/efc8/src/clock_divider.vhd" \
+"../../../bd/design_1/ipshared/efc8/src/vga_generator.vhd" \
+"../../../bd/design_1/ipshared/efc8/hdl/AXI_VGA_Slave_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_AXI_VGA_Slave_0_0/sim/design_1_AXI_VGA_Slave_0_0.vhd" \
+"../../../bd/design_1/ipshared/6118/src/char8x12_lookup_table.vhd" \
+"../../../bd/design_1/ipshared/6118/src/irq_delay.vhd" \
+"../../../bd/design_1/ipshared/6118/src/pixelcode_to_pixelword.vhd" \
+"../../../bd/design_1/ipshared/6118/src/scancode2ascii.vhd" \
+"../../../bd/design_1/ipshared/6118/hdl/text_display_master_v1_0_M00_AXI.vhd" \
+"../../../bd/design_1/ipshared/6118/hdl/text_display_master_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_text_display_master_0_0/sim/design_1_text_display_master_0_0.vhd" \
+"../../../bd/design_1/ipshared/58e9/src/fsm_ps2.vhd" \
+"../../../bd/design_1/ipshared/58e9/hdl/ps2_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/58e9/hdl/ps2_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_ps2_0_0/sim/design_1_ps2_0_0.vhd" \
+"../../../bd/design_1/ipshared/fb66/hdl/axi_switches_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/fb66/hdl/axi_switches_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_switches_0_0/sim/design_1_axi_switches_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_clk_wiz_100M_0/sim/design_1_rst_clk_wiz_100M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

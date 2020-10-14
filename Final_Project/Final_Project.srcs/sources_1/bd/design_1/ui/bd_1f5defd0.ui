@@ -1,0 +1,54 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port CPU_RESETN -pg 1 -y -330 -defaultsOSRD
+preplace port VGA_VS -pg 1 -y -270 -defaultsOSRD
+preplace port CLK100MHZ -pg 1 -y -300 -defaultsOSRD
+preplace port PS2_CLK -pg 1 -y -70 -defaultsOSRD
+preplace port PS2_DATA -pg 1 -y -100 -defaultsOSRD
+preplace port VGA_HS -pg 1 -y -300 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -y -330 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -y -390 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -y -360 -defaultsOSRD
+preplace portBus SW -pg 1 -y -220 -defaultsOSRD
+preplace inst text_display_master_0 -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 2 -y -300 -defaultsOSRD
+preplace inst AXI_VGA_Slave_0 -pg 1 -lvl 2 -y -100 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 3 -y -200 -defaultsOSRD
+preplace inst axi_switches_0 -pg 1 -lvl 1 -y -210 -defaultsOSRD
+preplace inst text_display_master_0_axi_periph -pg 1 -lvl 2 -y -520 -defaultsOSRD
+preplace inst ps2_0 -pg 1 -lvl 4 -y -90 -defaultsOSRD
+preplace netloc clk_wiz_locked 1 2 1 550
+preplace netloc AXI_VGA_Slave_0_BRAM_WDATA 1 2 1 490
+preplace netloc AXI_VGA_Slave_0_VGA_VS 1 2 3 530 -310 NJ -310 1200J
+preplace netloc AXI_VGA_Slave_0_VGA_R 1 2 3 480 -330 NJ -330 1200J
+preplace netloc text_display_master_0_axi_periph_M01_AXI 1 0 3 -390 0 60J 40 460
+preplace netloc AXI_VGA_Slave_0_VGA_G 1 2 3 490 -320 NJ -320 1210J
+preplace netloc AXI_VGA_Slave_0_BRAM_WADDR 1 2 1 510
+preplace netloc CPU_RESETN_1 1 0 3 NJ -330 70 60 470
+preplace netloc rst_clk_wiz_100M_interconnect_aresetn 1 1 3 110 210 NJ 210 910
+preplace netloc AXI_VGA_Slave_0_BRAM_WE 1 2 1 500
+preplace netloc ps2_0_IRQ_O 1 0 5 -360 200 NJ 200 NJ 200 NJ 200 1200
+preplace netloc AXI_VGA_Slave_0_BRAM_RADDR 1 2 1 480
+preplace netloc CLK100MHZ_1 1 0 2 NJ -300 90
+preplace netloc text_display_master_0_axi_periph_M00_AXI 1 2 2 550 -340 940J
+preplace netloc Net1 1 4 1 1220
+preplace netloc Net 1 4 1 1210
+preplace netloc blk_mem_gen_0_doutb 1 1 2 130 140 NJ
+preplace netloc text_display_master_0_axi_periph_M02_AXI 1 1 2 120 50 450
+preplace netloc AXI_VGA_Slave_0_VGA_HS 1 2 3 540 -300 NJ -300 NJ
+preplace netloc text_display_master_0_M00_AXI 1 1 1 50
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 0 4 -370 -10 100 70 540J -80 920
+preplace netloc clk_wiz_clk_out1 1 0 4 -380 -20 80 80 520 -90 NJ
+preplace netloc SW_1 1 0 1 N
+preplace netloc AXI_VGA_Slave_0_VGA_B 1 2 3 550 -100 930J -290 1220J
+levelinfo -pg 1 -410 -80 290 740 1080 1240 -top -680 -bot 600
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"2"
+}

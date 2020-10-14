@@ -1,0 +1,1880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>design_1_text_display_master_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>M00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:master>
+        <spirit:addressSpaceRef spirit:addressSpaceRef="M00_AXI"/>
+      </spirit:master>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PROTOCOL</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.PROTOCOL">AXI4LITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ">50000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.ID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ADDR_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.ADDR_WIDTH">32</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>AWUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.AWUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ARUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.ARUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.WUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.RUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>BUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.BUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>READ_WRITE_MODE</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.READ_WRITE_MODE">READ_WRITE</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_BURST">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_LOCK</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_LOCK">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_PROT</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_PROT">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_CACHE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_CACHE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_QOS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_QOS">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_REGION</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_REGION">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_WSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_WSTRB">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_BRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_BRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_RRESP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.HAS_RRESP">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_OUTSTANDING">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_OUTSTANDING">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>MAX_BURST_LENGTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.MAX_BURST_LENGTH">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN">/clk_wiz_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_READ_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>NUM_WRITE_THREADS</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_THREADS">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>RUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.RUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WUSER_BITS_PER_BYTE</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI.WUSER_BITS_PER_BYTE">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXI.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXI_RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.ASSOCIATED_BUSIF">M00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.ASSOCIATED_RESET">m00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.FREQ_HZ">50000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.CLK_DOMAIN">/clk_wiz_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:addressSpaces>
+    <spirit:addressSpace>
+      <spirit:name>M00_AXI</spirit:name>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="pow(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH&apos;)) - 1) + 1)" spirit:minimum="0" spirit:maximum="4294967296" spirit:rangeType="long">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) - 1) + 1">32</spirit:width>
+    </spirit:addressSpace>
+  </spirit:addressSpaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>text_display_master_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Dec 13 03:39:47 UTC 2019</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:638873d6</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_text_display_master_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Dec 13 03:39:47 UTC 2019</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:638873d6</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>text_display_master_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Dec 13 03:39:47 UTC 2019</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:74e9b3f4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>design_1_text_display_master_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Dec 13 03:39:47 UTC 2019</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:74e9b3f4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Dec 13 03:41:06 UTC 2019</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:638873d6</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>IRQ_I</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of M_AXI address bus. 
+    -- The master generates the read and write addresses of width specified as C_M_AXI_ADDR_WIDTH.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH" spirit:order="5" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of M_AXI data bus. 
+    -- The master issues write data and accept read data where the width of the data bus is C_M_AXI_DATA_WIDTH</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH" spirit:order="6" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_M00_PS2_SLAVE_BASE_ADDR</spirit:name>
+        <spirit:displayName>C M00 Ps2 Slave Base Addr</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_PS2_SLAVE_BASE_ADDR" spirit:bitStringLength="32">0x80000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_M00_VGA_SLAVE_BASE_ADDR</spirit:name>
+        <spirit:displayName>C M00 Vga Slave Base Addr</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_VGA_SLAVE_BASE_ADDR" spirit:bitStringLength="32">0xC0000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="std_logic_vector">
+        <spirit:name>C_M00_SW_SLAVE_BASE_ADDR</spirit:name>
+        <spirit:displayName>C M00 Sw Slave Base Addr</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_SW_SLAVE_BASE_ADDR" spirit:bitStringLength="32">0x40000000</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/char8x12_lookup_table.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/irq_delay.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/pixelcode_to_pixelword.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/scancode2ascii.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/hdl/text_display_master_v1_0_M00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/hdl/text_display_master_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/design_1_text_display_master_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/char8x12_lookup_table.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/irq_delay.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/pixelcode_to_pixelword.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/src/scancode2ascii.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/hdl/text_display_master_v1_0_M00_AXI.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6118/hdl/text_display_master_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/design_1_text_display_master_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>design_1_text_display_master_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_text_display_master_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_text_display_master_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_text_display_master_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_text_display_master_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of M_AXI address bus. 
+    -- The master generates the read and write addresses of width specified as C_M_AXI_ADDR_WIDTH.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_ADDR_WIDTH" spirit:order="5" spirit:rangeType="long">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of M_AXI data bus. 
+    -- The master issues write data and accept read data where the width of the data bus is C_M_AXI_DATA_WIDTH</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="6">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_text_display_master_0_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_PS2_SLAVE_BASE_ADDR</spirit:name>
+      <spirit:displayName>C M00 Ps2 Slave Base Addr</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_PS2_SLAVE_BASE_ADDR" spirit:bitStringLength="32">0x80000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_VGA_SLAVE_BASE_ADDR</spirit:name>
+      <spirit:displayName>C M00 Vga Slave Base Addr</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_VGA_SLAVE_BASE_ADDR" spirit:bitStringLength="32">0xC0000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_SW_SLAVE_BASE_ADDR</spirit:name>
+      <spirit:displayName>C M00 Sw Slave Base Addr</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_SW_SLAVE_BASE_ADDR" spirit:bitStringLength="32">0x40000000</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>text_display_master_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>57</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a418b5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4107db07_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5daef1d7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74cbbd48_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@437cdec3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a73ac26_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61f5615c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22eb7d5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33de188b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bfe8d91_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36cdf0cb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46628ee7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@466dcc9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d18ac05_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@445b370a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ad83504_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51c1517a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1349988a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dffff26_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f14015f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a96dee0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f706024_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@400f7ecc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@615adb43_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c61033_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@753445f2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e2084b9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2488a8f5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11bd2864_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49cef014_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@289fdbaa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393149a6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39d736d3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14fb8b67_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2681ba46_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3992116d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c791760_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c985243_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4253b11b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65be12a3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fc1e1d1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d117f90_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28871d3b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61ee1f76_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@252488a8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aefad71_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@528f4e95_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e5607cd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2127e4dc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c6111e8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49011543_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65281677_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b1528db_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f98fa5b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33761fc4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e1b9827_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41bc1d09_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11f9137_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e1d8624_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bf62110_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@498c6c16_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b756284_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72f02dd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35165212_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b5c3f17_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10e070ea_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a96b3b5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c327108_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39a60d2c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@559db188_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@344d6cff_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b0478b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ae75af2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fd1b7c8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d0771db_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755784a1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3524134_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@332c93d4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ecd8634_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70316504_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3014c2f2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef74296_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cd04acd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@655156b4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18f0b99_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55b375aa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16c76afb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48f5849d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b796345_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@732d5107_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b9c174e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33787110_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bf078b5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38ca5b5b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@713951c0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3043265d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a5165a0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ebe7e84_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d979f4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58efa812_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@458448b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b80c9b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13448679_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40ccc9e2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9b2ec26_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46add642_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4578e4de_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49105f51_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1260509d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dd66b7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11629b3a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7453cccf_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55621208_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a492d2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fb8065d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@344f10e6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68d4680d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@618361a4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ab9b5b9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2564520b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ae129f6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b39a253_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d8cf10_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b3f34f5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d2db23_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c5d265c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5399a86f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46f0435c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ba6f58_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a80a453_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70596b1b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@556fe8a7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10d4b952_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@328a18a4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e594380_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@483dc735_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4415dd27_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b321ff_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56d7cb29_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@260cfbe0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef3b3b8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57ce6ee6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36845cc5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@153bd61f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@326612da_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f81470_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f6e8c1f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38ca95fd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363c9e71_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fce1fbc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d7fd58_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7a3312_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd985d5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ef205cc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@127635c6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61011b84_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52ee237a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34670095_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4892a9ca_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52116dc3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ace4c0b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44136834_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ccf5ec2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20447330_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e65ab7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b4013c3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7708b1a6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f2ac2f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46a27e32_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e5a7d65_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b5fa71d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12350427_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dc44562_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79036d4b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1772ada3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c6b9e2b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16c65612_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f8916e7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e4daa95_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@620b125_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f0563df_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c39326d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7610f6ea_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57bcaa04_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dce2c0f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e10047d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fd5bd1b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e7215f1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ddd5fa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b20fb23_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53b9eb4a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@353984f0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fa55e21_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3006a5f4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413ec8c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75a35c58_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e363193_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24d0875f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519cc92c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e1ec2e0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@172fdc9a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3daaca1e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@586d826e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93f07ea_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a06158b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@784fb308_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c8b3341_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13fe1c30_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@348f4912_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ed02a1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58786624_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@481996ea_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@661d758f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43cf73cf_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d120f1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ea69340_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@562cb2dc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70363cbb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27d827df_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d6d1fde_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e7cd9de_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65cdb49b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d9f7a3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@477d2b78_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f478719_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38a5297f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3736943_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6674c730_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d8a6d30_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49d4d37e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d47df5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e69186d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44a19b3f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@546cdb75_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b334d1d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ec2971a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@692764a0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47f31fcb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a23407_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7906de85_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2028125c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a64d06_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7605f36e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e2506f4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e404acc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28c05137_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@186cf9b9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de73a23_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@623d71ab_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@414c2579_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@126e4c4b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@142817f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44e1e536_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aca10d0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78f608eb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56454d0f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60c6596e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f25b255_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20b6085e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56456e1a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31705058_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db166b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f95ad2c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec78c41_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fda5c79_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@228bedd4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c53e7d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70273939_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f26235d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47fdbba8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50632eda_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56f1407d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b888f2d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ff98f9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49bbf839_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@547e709a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40bb50c6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be339df_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ffcdff5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5243bdaa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a0ad591_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5299103b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c188e3f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f2e5028_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@437c2fe0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e0b1546_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@361d6a8e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@422ad8b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38322940_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67995216_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@617aeba4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c1f6bff_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68e6c64d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72ee2eb1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77c07bc9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ac0527e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62ad96bb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52d1aedf_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4362ad91_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ec47b90_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@704941b5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6916dd44_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43767a33_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@334e7951_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d57c148_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b87df4c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c5e387_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe974c5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c3e2c44_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@717cc30e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a1a49fa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd0a370_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1909190e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a8f167_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67c64f21_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b891bde_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@81731f0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13e5017e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15b46a09_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b75dc05_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58ac1d6f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f8bc9c2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38285201_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa29bc4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49c019c1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5319390_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37faa02a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dea1fe9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4151dd6d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17cf587f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69eae0fd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@958c5e8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4614d220_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b792a78_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5812369d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4140c143_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee0b654_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2db3a8b0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f8ebae8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c911073_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d02b83d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db9ddf_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a64b9d8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@158b830f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26d65248_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a5f31ac_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@740381b3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c0d136a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7411f8fa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c381a19_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@332d9793_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ef49bb1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c25ca38_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d85ca6f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4853580a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@713644cc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b8f8352_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@143040ff_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d498c29_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b3957a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40b18ca0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61c37876_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ea3b118_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@269b43eb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77c3512f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@478d7823_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@684cfec8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62468d13_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d027ac1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43023e1f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bf3513d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@717491da_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@184be811_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52a9f7fb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f0a67b2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c980cd0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40ba050e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98aea34_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60a3b958_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25c4ae9c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53f5805d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36227d66_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35246586_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d2a1b12_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@192e8ba4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dada9ae_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52336d32_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30470714_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5301a3f2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32aa85ee_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@349d0266_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e2a387a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59be75a7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14210b4a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d9adeb2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76d30955_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da241ae_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@755f8994_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@403d99e2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@277d2d85_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7373ac9c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc6ff45_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3afb2c5e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@603d8b43_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413b0b45_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ba3681e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6700d417_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ca30921_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a01b4f8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41c44c1f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fc36e18_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ca4dd1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f946c58_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d3d4396_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c3e2dfa_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c76f1a7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d17c0e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd8ef4d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32dac64b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2905db89_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b96c4b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f2948d4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5ed18_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6055227a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@653cfa95_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ed24a59_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797f5713_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f086a2a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d03f87f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56d3f441_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3634cf2a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8049d04_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34886d9b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@618e5c73_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4276e007_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69260838_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53fa6031_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@158afa67_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3710ab68_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58a4476f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b4add9e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38ff7a13_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c4cf7d2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11574008_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3343ed47_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@735b5808_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3259e3b1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@570a8c5b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59321a63_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bda0ace_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f991da5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ad97c6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4666bbc_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3134aece_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a0baa7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dd3710a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8c865a6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f9694c3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a994a81_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ada30da_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bea1c25_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a434e86_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25c58e6b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d62ab63_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bffec99_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c88720b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cdf2465_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c9cf605_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71146f00_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a148c5f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d1b624b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ecbee7a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6174c8e0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15dbfae9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f22460_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51aa8a42_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e51aac7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3722133e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4682d03c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e2b95e2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd636bb_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63f42a2e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@640de69b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@189d4959_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@465bebd1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4544c7e4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec45eda_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@490d6cfe_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@452c57b0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24f1662_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3becf9b3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@190f59d0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@237b1300_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24ce658f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78173c35_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cd9ce9d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@185c652b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@564114ea_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a904768_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e362f8e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@350320b0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db13a1d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54af048d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c42d91_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33e66a4d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1568356f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e6057f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6475d790_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d259e6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aba06f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61f9ef7b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a2c80d8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55eb42c1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66bc58b1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d1fbe20_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20729ec3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1118eb5e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65a1b52d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b2cb3df_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68760991_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f217465_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dfda8c2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35908240_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47cfcb3b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fd76ba_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@717cf634_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ef5a51c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70dac719_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@502e5b84_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@407a74e0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3662ead4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@658d446b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41097936_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa97443_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2465cc31_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ed04a6a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bb39eae_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b131a6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10ee8603_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d146d7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5806bfa5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@607d8230_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624f8b1c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e84a576_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5664c81e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8b4b223_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15de37a0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59cf64c7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fd44c7e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fbe90b8_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c54775b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a8cc389_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a3e742_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f6b2503_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63703535_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c67ebee_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2933dd32_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f85b2fe_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@367994ef_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23fc19bd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d23636f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@319344f5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cae72df_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f1adb55_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e3bd161_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a59f29b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@481d8507_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3208eb6d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649dc906_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47a66fbe_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2113351b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2357b9ca_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ba192e7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29282959_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40fba560_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bda4b10_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@86216a6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d3f716d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ca60d80_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cc32a9d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ee1360d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9daf922_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@faf295d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ffe710_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd6ed15_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fceb014_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5be88303_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40468b08_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25667f9d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23031cc6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c865fee_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@489944d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39dae930_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f433eda_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c514e3e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b7390ef_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@760b2007_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40563576_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2029e56a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db40728_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b869df_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@315b1eb5_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bd40435_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@153100bd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48b52886_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e8ecd2c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31010578_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a1659e7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@271b69e1_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57a34f14_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ff0f18d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@258988e3_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a8daf97_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e5476f2_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e79e682_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3000baba_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb50213_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60bae67c_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c4b1016_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f298930_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32a9e44e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75723f67_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e52994d_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22cb4d9a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3235f31e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70007add_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cf8ddab_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7471d663_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ae7612f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3598fd95_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9bc1320_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6deef524_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3361d6dd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bdf790b_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bfdc5af_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57c55b4_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ad657a7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38633af0_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74432720_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@309cc4a9_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@659f0539_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d41577a_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a6aa00_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@665724b6_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a64a13e_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f841bbd_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a3b40d7_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16fcbf0f_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71e27670_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8dd997_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59d3ab61_ARCHIVE_LOCATION">c:/Users/sidsu/VHDL/ECE4401/ip_repo/text_display_master_1.0</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.AWUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.BUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.CLK_DOMAIN" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.FREQ_HZ" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_BRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_LOCK" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_PROT" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_QOS" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_RRESP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.HAS_WSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.ID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_READ_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PHASE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.RUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI_CLK.CLK_DOMAIN" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI_CLK.FREQ_HZ" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXI_CLK.PHASE" xilinx:valuePermission="bd"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="188e99b4"/>
+      <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="55bfeea0"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="de44f5bd"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="a65638d2"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e2b1e8b1"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d76d5e97"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

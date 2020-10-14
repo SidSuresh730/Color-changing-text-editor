@@ -1,0 +1,101 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 12 22:42:48 2019
+| Host         : LAPTOP-L3QBNI7L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    78 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            3 |
+|      5 |            3 |
+|      6 |            3 |
+|      7 |            2 |
+|      8 |            4 |
+|      9 |            2 |
+|     10 |            2 |
+|     12 |            1 |
+|     13 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             102 |           51 |
+| No           | No                    | Yes                    |              18 |            8 |
+| No           | Yes                   | No                     |              45 |           19 |
+| Yes          | No                    | No                     |              34 |           10 |
+| Yes          | No                    | Yes                    |              10 |            8 |
+| Yes          | Yes                   | No                     |             121 |           39 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                                             Clock Signal                                             |                                                Enable Signal                                                |                                                  Set/Reset Signal                                                 | Slice Load Count | Bel Load Count |
++------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/clk_divider/s00_axi_aresetn_0 |                1 |              1 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/axi_awvalid_i_1_n_0                     |                2 |              4 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/SW_data_0                         |                                                                                                                   |                1 |              4 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/mst_exec_state_reg[2]_0           | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/char8x12_inst/m00_axi_aresetn_0         |                2 |              4 |
+| ~PS2_CLK_IBUF                                                                                        |                                                                                                             | design_1_i/ps2_0/U0/ps2_v1_0_S00_AXI_inst/fsm_ps2_inst/s00_axi_aresetn_0                                          |                2 |              5 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/rst_clk_wiz_100M/U0/EXT_LPF/lpf_int                                                                    |                2 |              5 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/reg_slice_r/aa_rready        |                                                                                                                   |                2 |              5 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/axi_switches_0/U0/axi_switches_v1_0_S00_AXI_inst/axi_awready_i_1_n_0                                   |                2 |              6 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/CEB2                              | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/char8x12_inst/m00_axi_aresetn_0         |                2 |              6 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/rst_clk_wiz_100M/U0/SEQ/seq_cnt_en                                                               | design_1_i/rst_clk_wiz_100M/U0/SEQ/SEQ_COUNTER/clear                                                              |                1 |              6 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/ps2_0/U0/ps2_v1_0_S00_AXI_inst/fsm_ps2_inst/s00_axi_aresetn_0                                          |                3 |              7 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/col_pointer[6]_i_1_n_0            | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/char8x12_inst/m00_axi_aresetn_0         |                6 |              7 |
+| ~PS2_CLK_IBUF                                                                                        | design_1_i/ps2_0/U0/ps2_v1_0_S00_AXI_inst/fsm_ps2_inst/scancode0                                            |                                                                                                                   |                1 |              8 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/axi_switches_0/U0/axi_switches_v1_0_S00_AXI_inst/slv_reg_rden                                    | design_1_i/axi_switches_0/U0/axi_switches_v1_0_S00_AXI_inst/axi_awready_i_1_n_0                                   |                1 |              8 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/scancode_1                        |                                                                                                                   |                3 |              8 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/ps2_0/U0/ps2_v1_0_S00_AXI_inst/slv_reg_rden                                                      | design_1_i/ps2_0/U0/ps2_v1_0_S00_AXI_inst/fsm_ps2_inst/s00_axi_aresetn_0                                          |                1 |              8 |
+| ~PS2_CLK_IBUF                                                                                        |                                                                                                             |                                                                                                                   |                4 |              9 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/E[0]       |                                                                                                                   |                3 |              9 |
+|  design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/clk_divider/CLK |                                                                                                             | design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/clk_divider/s00_axi_aresetn_0 |                4 |             10 |
+|  design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/clk_divider/CLK | design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/line_count              | design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/clk_divider/s00_axi_aresetn_0 |                8 |             10 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/char8x12_inst/m00_axi_aresetn_0         |                7 |             12 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             | design_1_i/text_display_master_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/SR[0]            |                4 |             13 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/axi_awready0                                  | design_1_i/AXI_VGA_Slave_0/U0/AXI_VGA_Slave_v1_0_S00_AXI_inst/vgagen_generator_inst/clk_divider/s00_axi_aresetn_0 |                5 |             16 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/pixel_address_counter[0]_i_1_n_0  | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/char8x12_inst/m00_axi_aresetn_0         |                4 |             16 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/p_0_in1_in | design_1_i/text_display_master_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/SR[0]            |               13 |             18 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/axi_wdata                         | design_1_i/text_display_master_0/U0/text_display_master_v1_0_M00_AXI_inst/axi_wdata[31]_i_1_n_0                   |                4 |             32 |
+|  design_1_i/clk_wiz/inst/clk_out1                                                                    |                                                                                                             |                                                                                                                   |               48 |             95 |
++------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
