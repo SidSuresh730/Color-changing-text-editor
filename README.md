@@ -84,3 +84,5 @@ The address then remains the same and the state moves to IDLE.  \
 
 In the VGA_WRITE state, a single character is written to block memory as well. The write data is the pixel word output from the pixelcode_to_pixelword module. 
 The address is then changed to the next character block and then the state goes back to IDLE.
+
+[Figure1](https://github.com/SidSuresh730/Color-changing-text-editor/blob/master/Final_Project/Figure1.png)
